@@ -1,0 +1,14 @@
+SQL> SELECT Name,Salary
+  2  FROM Instructor
+  3  WHERE LOWER(Name) LIKE '%s%'
+  4  AND Salary> 50000;
+
+NAME                     SALARY                                                                                                                                                                                                                                                                                                                                                                                 
+-------------------- ----------                                                                                                                                                                                                                                                                                                                                                                                 
+Bhim Sunar                90000                                                                                                                                                                                                                                                                                                                                                                                 
+HrishavTandukar           70000                                                                                                                                                                                                                                                                                                                                                                                 
+Adesh Tandukar            80000                                                                                                                                                                                                                                                                                                                                                                                 
+Biwash Adhikari           80000                                                                                                                                                                                                                                                                                                                                                                                 
+Sanjaya Regmi            111000                                                                                                                                                                                                                                                                                                                                                                                 
+
+SQL> spool off;
